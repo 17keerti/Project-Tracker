@@ -25,48 +25,50 @@
       <label for="projectName">Project Name</label>
       <input type="text" name="projectName" class="form-control" id="projectName">
     </div>
+    
     <div class="form-group">
-      <fieldset>
         <label for="projectType">Project Type</label>
-        <select name="speed" id="speed">
-          
-          <option>HTML</option>
-          <option>CSS</option>
-          <option>JQuery</option>
-          <option>Java script</option>
-          <option>Bootstrap</option>
+        <select class="form-control" id="projectType">
+          <option select disabled>Pick One...</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JQuery">JQuery</option>
+          <option value="JavaScript">Java script</option>
+          <option value="Bootstrap">Bootstrap</option>
         </select>
-      </fieldset>
     </div>
+    
     <div class="form-group">
       <label for="hourlyWage">Hourly Wage</label>
       <input type="text" name="hourlyWage" class="form-control" id="hourlyWage">
     </div>
+    
     <div class="form-group">
       <label  for="dueDate">Due Date</label>
       <input type="text" name="dueDate" class="form-control" id="dueDate">
     </div>
    
     <button type="submit" class="btn btn-primary">Submit</button>
+  
   </form>
 
-  <table class="projectTable">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Project Name</th>
-        <th scope="col">Project Type</th>
-        <th scope="col">Hourly Wage</th>
-        <th scope="col">Due Date</th>
-        <th scope="col">Days Until Due Date</th>
-        <th scope="col">Estimated Total Earned</th>
-      </tr>
-    </thead>
-    <tbody id="dataTable">
-      <tr>
-        <th scope="row">1</th>
-      </tr>
-    </tbody>
-  </table>
+  <section class="col-12 col-md-8 col-lg-9">
+    <div class="table-responsive">
+      <table class="projectTable">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Project Type</th>
+            <th scope="col">Hourly Wage</th>
+            <th scope="col">Due Date</th>
+            <th scope="col">Days Until Due Date</th>
+            <th scope="col">Estimated Total Earned</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+      </table>
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
