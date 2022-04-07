@@ -1,0 +1,19 @@
+.jumbotron {
+  text-align: center;
+  background-color: black;
+  color:white;
+}
+#userForm {
+  margin:40px;
+}
+
+fieldset {
+  border: 0;
+}
+label {
+  display: block;
+  margin: 30px 0 0 0;
+}
+.overflow {
+  height: 200px;
+}
